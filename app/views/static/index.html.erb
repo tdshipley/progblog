@@ -1,4 +1,4 @@
-<h1>Blog Home</h1>
+<h1>Thomas's Blog</h1>
 <% @posts.each do |post|%>
   <div class='post'>
     <h2><%= link_to post.title, post %> - <%= post.created_at.strftime("%d %b %Y") %></h2>

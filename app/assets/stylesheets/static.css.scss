@@ -2,8 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .post{
+  padding: 2%;
+  margin:1% auto 2% auto;
+  background:#ccc;
   h2{
     font: 150% sans-serif;
     border-bottom: 3px solid #000;
+  }
+  p{
+    padding:2%;
   }
 }

@@ -11,27 +11,59 @@
  *= require_self
  *= require_tree .
  */
+
 html {
+  height:100%;
   color: #000;
+  background:#f1f1f1;
+}
+
+body {
+  height:100%;
 }
 
 #menu {
+  #image {
+    height:160px;
+    width:160px;
+    margin: 5% auto 15% auto;
+    border: 2px solid #fff;
+  }
+
+  //Could be replaced using compass
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  
+
   display: block;
-  float: left;
-  width: 200px;
-  height: 500px;
-  background-color:#000;
+  float: right;
+  width: 20%;
+  height: 100%;
   color: #fff;
-  margin-right: 10px;
-  padding: 10px;
+  margin-left: 10px;
 
   ul{
     padding: 0;
+    margin:5%;
     li{
       list-style: none;
+      border-top: 2px solid #fff;
+      padding:5% 10% 5% 10%;
+      text-align:center;
       a {
+        font-size: 130%;
         color: #fff;
+        text-decoration: none;
       }
+    }
+    li:last-child{
+      border-bottom: 2px solid #fff;
     }
   }
 }
@@ -39,9 +71,11 @@ html {
 #content {
   display: block;
   float: left;
-  width: 500px;
-  
+  width: 70%;
+  padding:2%;
+
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font-size:40px;
   }
 }
