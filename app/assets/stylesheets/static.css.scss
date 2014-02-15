@@ -1,6 +1,13 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#content {
+  h1 {
+    margin-bottom: 50px;
+    font-size:30px;
+  }
+}
+
 .post{
   padding: 2%;
   margin:1% auto 2% auto;

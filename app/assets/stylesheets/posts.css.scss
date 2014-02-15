@@ -1,3 +1,27 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#content{
+  .title{
+    margin-bottom:20px;
+    h1{
+      margin-bottom: 10px;
+      font-size:30px;
+    }
+  }
+  .body{
+    margin: 10px 0px 10px 0px;
+  }
+  .comments{
+    margin: 10px 0px 10px 0px;
+    h3{
+      margin: 0px 0px 5px 0px;
+    }
+    .comment{
+      margin: 10px 0px 10px 0px;
+      border-top: #000 1px solid;
+      border-bottom: #000 1px solid;
+      padding: 10px 0px 10px 0px;
+    }
+  }
+}
