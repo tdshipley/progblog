@@ -1,16 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-valid_comment:
-  name: Thomas
-  body: This is my amazing post
+valid:
+  name: Super Test Name 9865
+  body: This is my amazing post 86896
   post_id: 1
 
-invalid_comment_no_name:
+invalid_no_name:
   name: 
-  body: This is my amazing post
+  body: This is my amazing post 89968
   post_id: 1
 
-invalid_comment_no_body:
-  name: Thomas
+invalid_no_body:
+  name: Super Test Name 5362
   body:
   post_id: 1

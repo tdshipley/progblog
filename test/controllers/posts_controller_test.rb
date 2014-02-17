@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PostsControllerTest < ActionController::TestCase
   setup do
-    @post = posts(:one)
+    @post = posts(:valid)
   end
 
   test "should get index" do
