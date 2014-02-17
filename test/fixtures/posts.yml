@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  body: MyText
+valid_post:
+  title: My blog post
+  body: <p>This is my blog post it is great</p>
 
-two:
-  title: MyString
-  body: MyText
+invalid_post_no_title:
+  title:
+  body: <p>This is my blog post it is great</p>
+  
+inavlid_post_no_body:
+  title: My blog post
+  body:

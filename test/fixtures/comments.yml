@@ -1,11 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  body: MyText
-  post_id: 
+valid_comment:
+  name: Thomas
+  body: This is my amazing post
+  post_id: 1
 
-two:
-  name: MyString
-  body: MyText
-  post_id: 
+invalid_comment_no_name:
+  name: 
+  body: This is my amazing post
+  post_id: 1
+
+invalid_comment_no_body:
+  name: Thomas
+  body:
+  post_id: 1
