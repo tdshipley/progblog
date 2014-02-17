@@ -2,6 +2,6 @@
 <% @posts.each do |post|%>
   <div class='post'>
     <h2><%= link_to post.title, post %> - <%= post.created_at.strftime("%d %b %Y") %></h2>
-    <p><%= post.body %></p>
+    <p><%= post.body.html_safe %></p>
   </div>
 <% end %>
