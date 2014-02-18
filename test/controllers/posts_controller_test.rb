@@ -6,9 +6,10 @@ class PostsControllerTest < ActionController::TestCase
   end
 
   test "should get index" do
-    get :index
+    get "index"
     assert_response :success
     assert_not_nil assigns(:posts)
+    assert_select '#content h1', maximum: 1
   end
 
   test "should get new" do
@@ -27,6 +28,7 @@ class PostsControllerTest < ActionController::TestCase
   test "should show post" do
     get :show, id: @post
     assert_response :success
+    assert_template partial: 'comments/_form'
   end
 
   test "should get edit" do

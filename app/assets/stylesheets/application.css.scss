@@ -16,6 +16,7 @@ html {
   height:100%;
   color: #000;
   background:#f1f1f1;
+  line-height:1.5em;
 }
 
 body {
@@ -77,5 +78,15 @@ body {
   h1 {
     margin-bottom: 50px;
     font-size:40px;
+  }
+
+  p{
+    padding:4px;
+  }
+  
+  p#notice{
+    padding-bottom: 10px;
+    font-size:14px;
+    font-weight:bold;
   }
 }
