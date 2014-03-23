@@ -1,4 +1,5 @@
 Blogkata::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   controller :sessions do
     get    'login' => :new
     post   'login' => :create

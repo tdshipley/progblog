@@ -35,6 +35,11 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
+# Ckeditor with paperclip which is required
+gem 'ckeditor'
+gem 'paperclip'
+# version of paperclip that works with no mods , '3.5.4'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
