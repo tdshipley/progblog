@@ -1,7 +1,6 @@
-<h1>Thomas's Blog</h1>
 <% @posts.each do |post|%>
   <div class='post'>
-    <h2><%= link_to post.title, post %> - <%= post.created_at.strftime("%d %b %Y") %></h2>
-    <p><%= post.body.to_s.html_safe %></p>
+    <h2><%= link_to post.title, post %></h2>
+    <h3><%= post.created_at.strftime("%d %b %Y") %></h3>
   </div>
 <% end %>

@@ -11,68 +11,110 @@
  *= require_self
  *= require_tree .
  */
+//= require font-awesome
 
 html {
-  height:100%;
   color: #000;
   background:#f1f1f1;
   line-height:1.5em;
+  font-family:sans-serif;
 }
 
 body {
-  height:100%;
+}
+#wrapper {
+  padding-left: 25%; /* "left col (nav + list)" width */
+  position: relative;
 }
 
 #menu {
-  #image {
-    height:160px;
-    width:160px;
-    margin: 5% auto 10% auto;
-    border: 2px solid #fff;
-  }
-
-  //Could be replaced using compass
-  background: #45484d; /* Old browsers */
-  background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-  
-
-  display: block;
-  float: right;
-  width: 20%;
-  height: 100%;
+  text-align: center;
+  border-right: solid #000 4px;
+  //float: right;
+  //width: 25%;
   color: #fff;
-  margin-left: 10px;
+  background: #860224;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  margin-left: -25%;
 
-  ul{
-    padding: 0;
-    margin:5%;
-    li{
-      list-style: none;
-      border-top: 2px solid #fff;
-      padding:5% 10% 5% 10%;
-      text-align:center;
-      a {
-        font-size: 130%;
-        color: #fff;
-        text-decoration: none;
+  #content {
+    margin-top: 20%;
+    margin-left:auto;
+    margin-right:auto;
+    #image {
+      height:160px;
+      width:160px;
+      margin: 10% auto 10% auto;
+      border: 2px solid #fff;
+    }
+
+    ul{
+      padding: 0;
+      margin:5%;
+      li{
+        list-style: none;
+        border-top: 2px solid #fff;
+        padding:5% 10% 5% 10%;
+        a {
+          font-size: 130%;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      li:last-child{
+        border-bottom: 2px solid #fff;
       }
     }
-    li:last-child{
-      border-bottom: 2px solid #fff;
+
+    #name {
+      h1 {
+        margin:5%;
+        text-transform:uppercase;
+        font-size: 2em;
+        line-height: 1.25em;
+      }
+    }
+
+    #tagline {
+      h2 {
+        margin: 4%;
+      }
+      p {
+        margin: 4%;
+        text-align: justify;
+      }
+    }
+
+    #media_icons {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          padding: 4%;
+          border: none;
+          display: inline-block;
+          a {
+            i {
+              color: #fff;
+            }
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
     }
   }
 }
 
 #content {
   display: block;
-  float: left;
-  width: 70%;
+  width:90%;
+  margin:auto;
   padding:2%;
 
   h1 {

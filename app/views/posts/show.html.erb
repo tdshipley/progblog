@@ -1,3 +1,7 @@
+<%= link_to root_url, class: 'back' do %>
+  <%= icon('arrow-left', '', class: 'fa-3x') %>
+<% end %>
+
 <div class="title">
   <h1><%= @post.title %><h2>
   <h2><%= @post.created_at.strftime("%d %b %Y") %></h2>
@@ -14,7 +18,10 @@
   <% @post.comments.each do |comment| %>
   <div class="comment">
     <h4><%= comment.name %></h4>
-    <p><%= comment.body %></p>
+    <p>
+      <%= icon('quote-left', '', class: 'fa-2x pull-left fa-border')%>
+      <%= comment.body %>
+    </p>
     <% if User.find_by(id: session[:user_id])%>
       <%= button_to 'Delete', comment_path(comment), method: :delete, data: { confirm: "Are you sure?" } %>
     <% end %>
@@ -24,4 +31,4 @@
   <%= render :partial => "comments/form", :comment => @post.comments.new %>
 </div>
 
-<%= link_to 'Back', root_path %>
+
