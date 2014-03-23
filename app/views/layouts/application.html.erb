@@ -17,7 +17,14 @@
     </div>
     <ul>
       <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'View Blog Posts', posts_path %></li>
+      <% if User.find_by(id: session[:user_id]) %>
+        <li><%= link_to 'Post Admin', posts_path %></li>
+        <li><%= link_to 'User Admin', users_path %></li>
+        <li><%= link_to 'Logout', logout_path, method: :delete, data: { confirm: "Are you sure you want to logout?",
+                                                                        title: "Confirm logout" } %></li>
+      <% else %>
+        <li><%= link_to 'Login', login_path %>
+      <% end %>
     </ul>
   </div>
   <div id="content">
