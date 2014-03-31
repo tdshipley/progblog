@@ -49,10 +49,10 @@ body {
       border: 2px solid #fff;
     }
 
-    ul{
+    ul {
       padding: 0;
       margin:5%;
-      li{
+      li {
         list-style: none;
         border-top: 2px solid #fff;
         padding:5% 10% 5% 10%;
@@ -120,13 +120,24 @@ body {
     font-size:40px;
   }
 
-  p{
+  p {
     padding:4px;
   }
   
-  p#notice{
+  p#notice {
     padding-bottom: 10px;
     font-size:14px;
     font-weight:bold;
+  }
+
+  form {
+    fieldset {
+      margin: 10px 0px 10px 0px;
+    }
+    label {
+      display: inline-block !important;
+      padding-bottom: 2px;
+      font-weight: bold;
+    }
   }
 }

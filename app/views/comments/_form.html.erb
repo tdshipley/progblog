@@ -10,16 +10,17 @@
       <% end %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, size: 63%>
-  </div>
-  <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_area :body, cols: 61, rows:5 %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <fieldset>
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name, size: 63%>
+    </div>
+    <div class="field">
+      <%= f.label :body %><br>
+      <%= f.text_area :body, cols: 61, rows:5 %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </fieldset>
 <% end %>
