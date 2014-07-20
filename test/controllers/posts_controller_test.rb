@@ -9,7 +9,7 @@ class PostsControllerTest < ActionController::TestCase
     get "index"
     assert_response :success
     assert_not_nil assigns(:posts)
-    assert_select '#content h1', maximum: 1
+    assert_select '#main_content h1', maximum: 1
   end
 
   test "should get new" do
