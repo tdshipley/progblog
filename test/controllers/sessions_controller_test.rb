@@ -7,13 +7,13 @@ class SessionsControllerTest < ActionController::TestCase
   end
 
   test "should get login" do
-    tom = users(:two)
+    tom = users(:tom)
     post :create, name: tom.name, password: 'secret'
     assert_redirected_to admin_url
   end
 
   test "should fail login" do
-    tom = users(:two)
+    tom = users(:tom)
     post :create, name: tom.name, password: 'fail'
     assert_redirected_to login_url
   end

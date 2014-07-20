@@ -3,14 +3,14 @@
 valid:
   name: Super Test Name 9865
   body: This is my amazing post 86896
-  post_id: 1
+  post: valid
 
 invalid_no_name:
   name: 
   body: This is my amazing post 89968
-  post_id: 1
+  post: valid
 
 invalid_no_body:
   name: Super Test Name 5362
   body:
-  post_id: 1
+  post: valid
