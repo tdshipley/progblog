@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+valid:
+  title: My blog post 8633
+  body: <p>This is my blog post it is great 6895958</p>
+invalid_no_title:
+  title:
+  body: <p>This is my blog post it is great 8698969</p>
+invalid_no_body:
+  title: My blog post
+  body:
