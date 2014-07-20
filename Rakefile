@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Blogkata::Application.load_tasks
+Progblog::Application.load_tasks

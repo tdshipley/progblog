@@ -1,4 +1,4 @@
-Blogkata::Application.routes.draw do
+Progblog::Application.routes.draw do
   get 'admin' => 'admin#index'
   mount Ckeditor::Engine => '/ckeditor'
   controller :sessions do

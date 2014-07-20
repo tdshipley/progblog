@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Blogkata::Application.config.secret_key_base = '50e2e722cfb347426f7b25bcf123e0d6390a473128f751616426d47ba5b27d7f6ba5af03d6ab956dc2b5fcdc8ad8d9c1c672a396b8fd6a8e30cb8ad4208820bb'
+Progblog::Application.config.secret_key_base = '50e2e722cfb347426f7b25bcf123e0d6390a473128f751616426d47ba5b27d7f6ba5af03d6ab956dc2b5fcdc8ad8d9c1c672a396b8fd6a8e30cb8ad4208820bb'

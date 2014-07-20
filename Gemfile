@@ -42,6 +42,9 @@ gem 'paperclip'
 # Awesome font
 gem 'font-awesome-sass'
 
+# Automates renaming a rails app
+gem 'rename'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
