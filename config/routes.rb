@@ -1,4 +1,6 @@
 Progblog::Application.routes.draw do
+  resource :setting, only: [:show, :edit, :update]
+
   get 'admin' => 'admin#index'
   mount Ckeditor::Engine => '/ckeditor'
   controller :sessions do
