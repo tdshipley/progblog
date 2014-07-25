@@ -14,7 +14,8 @@ class SettingsController < ApplicationController
   # PATCH/PUT /settings/1.json
   def update
     respond_to do |format|
-      if @setting.update(setting_params)
+      #setting_params[:comments?] = setting_params.delete :comments
+      if @setting.update(comments?: setting_params[:comments])
         format.html { redirect_to @setting, notice: 'Setting was successfully updated.' }
         format.json { head :no_content }
       else
@@ -32,6 +33,6 @@ class SettingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def setting_params
-      params.require(:setting).permit(:comments?)
+      params.require(:setting).permit(:comments)
     end
 end

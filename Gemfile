@@ -49,6 +49,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'capybara'
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'debugger'
 end
 
 # Use unicorn as the app server
@@ -56,6 +57,3 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
